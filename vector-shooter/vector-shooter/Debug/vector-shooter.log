@@ -1,0 +1,47 @@
+﻿Build started 25/10/2012 21:09:52.
+     1>Project "C:\Users\sparkon\Documents\git\VectorShooter-temp-\vector-shooter\vector-shooter\vector-shooter.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\SFML2012\SFML2\include /ZI /nologo /W3 /WX- /Od /Oy- /D SFML_STATIC /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt source\graph\Map.cpp
+         Map.cpp
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vector-shooter\vector-shooter\source\graph\map.cpp(29): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vector-shooter\vector-shooter\source\graph\map.cpp(67): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vector-shooter\vector-shooter\source\graph\map.cpp(129): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vector-shooter\vector-shooter\source\graph\map.cpp(175): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vector-shooter\vector-shooter\source\graph\map.cpp(177): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vector-shooter\vector-shooter\source\graph\map.cpp(237): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vector-shooter\vector-shooter\source\graph\map.cpp(314): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vector-shooter\vector-shooter\source\graph\map.cpp(338): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vector-shooter\vector-shooter\source\graph\map.cpp(347): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vector-shooter\vector-shooter\source\graph\map.cpp(383): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vector-shooter\vector-shooter\source\utility\data.h(218): warning C4018: '<' : signed/unsigned mismatch
+                 c:\users\sparkon\documents\git\vectorshooter-temp-\vector-shooter\vector-shooter\source\graph\map.cpp(192) : see reference to function template instantiation 'bool isInside<float>(const sf::Vector2<T> &,const std::vector<_Ty> &)' being compiled
+                 with
+                 [
+                     T=float,
+                     _Ty=sf::Vector2f
+                 ]
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vector-shooter\vector-shooter\source\graph\map.cpp(47): warning C4018: '<' : signed/unsigned mismatch
+                 c:\users\sparkon\documents\git\vectorshooter-temp-\vector-shooter\vector-shooter\source\graph\map.cpp(256) : see reference to function template instantiation 'bool NodeExists<float>(const sf::Vector2<T> &,const std::vector<_Ty> &,int &)' being compiled
+                 with
+                 [
+                     T=float,
+                     _Ty=MapNode
+                 ]
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\sparkon\Documents\git\VectorShooter-temp-\vector-shooter\Debug\vector-shooter.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\SFML2012\SFML2\lib "sfml-audio-s-d.lib" "sfml-graphics-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\sparkon\Documents\git\VectorShooter-temp-\vector-shooter\Debug\vector-shooter.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\sparkon\Documents\git\VectorShooter-temp-\vector-shooter\Debug\vector-shooter.lib" /MACHINE:X86 Debug\Player.obj
+         Debug\Collision.obj
+         Debug\Game.obj
+         Debug\GameState.obj
+         Debug\GraphSearch.obj
+         Debug\Map.obj
+         Debug\main.obj
+         Debug\Menu.obj
+         Debug\Bullet.obj
+         Debug\Weapon.obj
+         Debug\WeaponSystem.obj
+         vector-shooter.vcxproj -> C:\Users\sparkon\Documents\git\VectorShooter-temp-\vector-shooter\Debug\vector-shooter.exe
+     1>Done Building Project "C:\Users\sparkon\Documents\git\VectorShooter-temp-\vector-shooter\vector-shooter\vector-shooter.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.97
