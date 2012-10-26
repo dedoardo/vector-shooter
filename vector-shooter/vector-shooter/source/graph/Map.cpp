@@ -8,6 +8,9 @@
 #include "Map.h"
 #include "../utility/Data.h"
 #include "GraphSearch.h"
+#include <boost/archive/text_iarchive.hpp>
+#include <boost/archive/text_oarchive.hpp>
+#include <ios>
 
 #include <fstream>
 #include <iostream>
@@ -16,7 +19,6 @@
 #include <cassert>
 
 #include <SFML/Graphics/CircleShape.hpp>
-
 /**
 ==========================
 isInside()
@@ -231,6 +233,10 @@ void Map::CreateNodes()
 	sf::Vector2f posLeft;
 	sf::Vector2f posDown;
 	sf::Vector2f posUp;
+	sf::Vector2f upRight;
+	sf::Vector2f upLeft;
+	sf::Vector2f downLeft;
+	sf::Vector2f downRight;
 
 	std::vector<MapNode>::size_type s = nodes_.size();
 	int edgeIndex = 0; // edge Index for later researches
@@ -248,10 +254,27 @@ void Map::CreateNodes()
 		posUp.x = nodes_[i].position_.x;
 		posUp.y = nodes_[i].position_.y - 10 ;
 
+		upRight.x = nodes_[i].position_.x + 10;
+		upRight.y = nodes_[i].position_.y - 10;
+
+		upLeft.x = nodes_[i].position_.x - 10;
+		upLeft.y = nodes_[i].position_.y - 10;
+
+		downRight.x = nodes_[i].position_.x + 10;
+		downRight.y = nodes_[i].position_.y + 10;
+
+		downLeft.x = nodes_[i].position_.x - 10;
+		downLeft.y = nodes_[i].position_.y + 10;
+
 		int rightIndex;
 		int leftIndex;
 		int downIndex;
 		int upIndex;
+		int upRightIndex;
+		int upLeftIndex;
+		int downRightIndex;
+		int downLeftIndex;
+
 		// Checking on 4 sides
 		if (NodeExists(posRight,nodes_,rightIndex))
 			if (!EdgeExists(nodes_[i].index_,rightIndex,edges_))
@@ -284,6 +307,43 @@ void Map::CreateNodes()
 			if (!EdgeExists(nodes_[i].index_,upIndex,edges_))
 			{
 				MapEdge from(nodes_[i].index_,upIndex,10);
+				from.setIndex(edgeIndex);
+				++edgeIndex;
+				edges_.push_back(from);
+				nodes_[i].edges_.push_back(from);
+			}
+		// obliqual nodes
+		if (NodeExists(upRight,nodes_,upRightIndex))
+			if (!EdgeExists(nodes_[i].index_,upRightIndex,edges_))
+			{
+				MapEdge from(nodes_[i].index_,upRightIndex,14);
+				from.setIndex(edgeIndex);
+				++edgeIndex;
+				edges_.push_back(from);
+				nodes_[i].edges_.push_back(from);
+			}
+		if (NodeExists(upLeft,nodes_,upLeftIndex))
+			if (!EdgeExists(nodes_[i].index_,upLeftIndex,edges_))
+			{
+				MapEdge from(nodes_[i].index_,upLeftIndex,14);
+				from.setIndex(edgeIndex);
+				++edgeIndex;
+				edges_.push_back(from);
+				nodes_[i].edges_.push_back(from);
+			}
+		if (NodeExists(downRight,nodes_,downRightIndex))
+			if (!EdgeExists(nodes_[i].index_,downRightIndex,edges_))
+			{
+				MapEdge from(nodes_[i].index_,downRightIndex,14);
+				from.setIndex(edgeIndex);
+				++edgeIndex;
+				edges_.push_back(from);
+				nodes_[i].edges_.push_back(from);
+			}
+		if (NodeExists(downLeft,nodes_,downLeftIndex))
+			if (!EdgeExists(nodes_[i].index_,downLeftIndex,edges_))
+			{
+				MapEdge from(nodes_[i].index_,downLeftIndex,14);
 				from.setIndex(edgeIndex);
 				++edgeIndex;
 				edges_.push_back(from);
@@ -332,11 +392,29 @@ void Map::Update(sf::RenderWindow& window)
 	tickTime_ += 1;
 	if (tickTime_ >= 60)
 	{
+		path_.clear();
 		GraphSearch s(*this);
-		s.SearchCurrentMap(path::DIJKSTRA_SEARCH,5000,500,path_);
+		s.SearchCurrentMap(path::A_STAR_SEARCH,5000,500,path_);
+		std::cout << path_.size();
 	}
 
+	for (int i = 0; i < path_.size(); ++i)
+	{
+		sf::CircleShape s(5);
+		s.setPosition(nodes_[path_[i]].position_);
+		s.setFillColor(sf::Color(255,0,0));
+		window.draw(s);
+	}
 
+	sf::CircleShape s1(5);
+	sf::CircleShape s2(5);
+	s1.setPosition(nodes_[5000].position_);
+	s2.setPosition(nodes_[500].position_);
+	s2.setFillColor(sf::Color(0,255,0));
+	s1.setFillColor(sf::Color(0,255,0));
+
+	window.draw(s1);
+	window.draw(s2);
 
 	for (int i = 0; i < walls_.size(); i++)
 	{
@@ -389,11 +467,15 @@ MapHandler::newMap()
 
 void MapHandler::newMap(std::string filename)
 {
+
+	// Checking if file is cached before parsing
+
+
+
 	// This is the file_parsing functions
 	// it uses istringstream to convert from string to integer
-	std::ifstream fileStream;
-	fileStream.open(filename);
-	
+	std::ifstream fileStream(filename,std::ios::binary);
+
 	std::string output;
 	std::string token;
 

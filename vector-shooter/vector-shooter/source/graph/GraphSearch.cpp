@@ -17,7 +17,10 @@ struct NodeCost
 {
 	NodeCost(int i,int c):index(i),cost(c){};
 	int index;
-	int cost;
+	int cost; // or costF for the A* algorithm
+	int costG;
+	int costH;
+	int parent; // parent index
 };
 
 struct compare
@@ -28,6 +31,22 @@ struct compare
 	}
 
 };
+
+struct compare2
+{
+	bool operator() (const NodeCost& l,const NodeCost& r)
+	{
+		return l.costH > r.costH;
+	}
+};
+
+template<typename T>
+inline float getSquaredMagnitude(sf::Vector2<T>& l, sf::Vector2<T>& r)
+{
+	float dX = r.x - l.x;
+	float dY = r.y - l.y;
+	return (dX * dX + dY * dY);
+}
 
 
 
@@ -289,9 +308,11 @@ void GraphSearch::DijkstraSearch(int sourceID,int targetID,std::vector<int>& pat
 
 		// checking if terminal node
 		if (nextNode == sourceID || nextNode == node::NODE_UNVISITED)
+		{
 			findNextNode = false;
+			path.push_back(sourceID);	
+		}
 	}
-
 }
 
 /**
@@ -302,5 +323,101 @@ GraphSearch::AStarSearch()
 
 void GraphSearch::AStarSearch(int sourceID,int targetID,std::vector<int>& path)
 {
+	// initialing containers
+	std::priority_queue<NodeCost,std::vector<NodeCost>,compare2> pq;
+	std::vector<int> openList(pNodes_->size(),node::NO_NODE_EXISTS);
+	std::vector<NodeCost> closedList(pNodes_->size(),NodeCost(node::NO_NODE_EXISTS,0));
+	std::vector<float> CostToNode(pNodes_->size(),node::NO_NODE_EXISTS);
+
+	sf::Vector2f* pEndPosition = &((*pNodes_)[targetID].position_);
+
+	// adding dummy node
+	NodeCost startNode(sourceID,0);
+	startNode.parent = sourceID;
+	startNode.costG = 0;
+	startNode.costH = getSquaredMagnitude((*pNodes_)[sourceID].position_,(*pNodes_)[targetID].position_);
+
+	pq.push(startNode);
+
+	while (!pq.empty())
+	{
+		// grabbing lowest cost node
+		NodeCost node = pq.top();
+
+		// switching it to closed list
+		closedList[node.index] = node;
+ 		openList[node.index] = node::NO_NODE_EXISTS;
+		pq.pop();
+
+		// checking if terminal node
+		if (node.index == targetID)
+		{
+			break;
+		}
+
+		// getting adjacents
+		std::size_t s = (*pNodes_)[node.index].edges_.size();
+		for (int i = 0; i < s; ++i)
+		{
+			// grabbing adjacent
+			MapEdge* adjacent = &((*pNodes_)[node.index].edges_[i]);
+			// calculating cost 
+			float costG = CostToNode[node.index] + adjacent->Cost();
+			float costH = getSquaredMagnitude((*pNodes_)[adjacent->To()].position_,*pEndPosition);
+
+			// if it's in closed list i'm continueing
+			if (closedList[adjacent->To()].index != node::NO_NODE_EXISTS)
+				continue;
+			// if it's not in the openlist i'm adding it
+			else if (openList[adjacent->To()] == node::NO_NODE_EXISTS)
+			{
+				NodeCost n(adjacent->To(),costH + costG);
+				n.parent = node.index;
+				n.costH = costH;
+				n.costG = costG;
+				
+				// adding it to openlist and priority queue
+				openList[adjacent->To()] = adjacent->To();
+				pq.push(n);
+				// updating cost vector
+				CostToNode[adjacent->To()] = costG;
+
+			}
+			// edge relaxation
+			else if(openList[adjacent->To()] != node::NO_NODE_EXISTS)
+			{
+				if (costG < CostToNode[adjacent->To()])
+				{
+					// changing the parent
+					closedList[adjacent->To()].index = node.index;
+
+					// recalculating costs
+					closedList[adjacent->To()].costG = costG;
+					closedList[adjacent->To()].cost = costG + closedList[adjacent->To()].costH;
+				}
+			}
+
+		}
+
+	}
+
+	// rebuilding the path from the closed list
+	int nextIndex = targetID;
+	while (true)
+	{
+		// adding node
+		path.push_back(nextIndex);
+
+		// getting next parent
+		nextIndex = closedList[nextIndex].parent;
+		
+		// checking if source node
+		if (nextIndex == sourceID)
+		{
+			path.push_back(sourceID);
+			break;
+		}
+		
+	}
 
 }
