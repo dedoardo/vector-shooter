@@ -1,0 +1,85 @@
+﻿Build started 25/10/2012 19:58:24.
+     1>Project "C:\Users\sparkon\Documents\git\VectorShooter-temp-\VectorShooterProject\VectorShooterProject\VectorShooterProject.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\SFML2012\SFML2\include /ZI /nologo /W3 /WX- /Od /Oy- /D SFML_STATIC /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\source\entity\Player.cpp ..\source\game\Collision.cpp ..\source\game\Game.cpp ..\source\game\GameState.cpp ..\source\graph\GraphSearch.cpp ..\source\graph\Map.cpp ..\source\main.cpp ..\source\menu\Menu.cpp ..\source\weapon\Bullet.cpp ..\source\weapon\Weapon.cpp ..\source\weapon\WeaponSystem.cpp
+         WeaponSystem.cpp
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\weapon\weaponsystem.cpp(13): warning C4018: '<' : signed/unsigned mismatch
+         Weapon.cpp
+         Bullet.cpp
+         Menu.cpp
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\menu\menu.cpp(90): warning C4244: 'initializing' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\menu\menu.cpp(91): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\menu\menu.cpp(105): warning C4018: '<' : signed/unsigned mismatch
+         main.cpp
+         Map.cpp
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\graph\map.cpp(29): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\graph\map.cpp(67): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\graph\map.cpp(129): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\graph\map.cpp(175): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\graph\map.cpp(177): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\graph\map.cpp(237): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\graph\map.cpp(314): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\graph\map.cpp(338): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\graph\map.cpp(356): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\graph\map.cpp(392): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\utility\data.h(218): warning C4018: '<' : signed/unsigned mismatch
+                 c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\graph\map.cpp(192) : see reference to function template instantiation 'bool isInside<float>(const sf::Vector2<T> &,const std::vector<_Ty> &)' being compiled
+                 with
+                 [
+                     T=float,
+                     _Ty=sf::Vector2f
+                 ]
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\graph\map.cpp(47): warning C4018: '<' : signed/unsigned mismatch
+                 c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\graph\map.cpp(256) : see reference to function template instantiation 'bool NodeExists<float>(const sf::Vector2<T> &,const std::vector<_Ty> &,int &)' being compiled
+                 with
+                 [
+                     T=float,
+                     _Ty=MapNode
+                 ]
+         GraphSearch.cpp
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\graph\graphsearch.cpp(90): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\graph\graphsearch.cpp(132): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\graph\graphsearch.cpp(176): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\graph\graphsearch.cpp(246): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\graph\graphsearch.cpp(249): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+         GameState.cpp
+         Game.cpp
+         Collision.cpp
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\game\collision.cpp(52): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\game\collision.cpp(87): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\game\collision.cpp(97): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\utility\data.h(151): warning C4018: '<' : signed/unsigned mismatch
+                 c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\game\collision.cpp(91) : see reference to function template instantiation 'sf::Vector2<T> Project<float>(const std::vector<_Ty> &,const sf::Vector2<T> &)' being compiled
+                 with
+                 [
+                     T=float,
+                     _Ty=sf::Vector2f
+                 ]
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\utility\data.h(168): warning C4018: '<' : signed/unsigned mismatch
+                 c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\game\collision.cpp(92) : see reference to function template instantiation 'sf::Vector2<T> Project<float>(sf::ConvexShape &,const sf::Vector2<T> &)' being compiled
+                 with
+                 [
+                     T=float
+                 ]
+         Player.cpp
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\entity\player.cpp(32): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vectorshooterproject\source\entity\player.cpp(79): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\sparkon\Documents\git\VectorShooter-temp-\VectorShooterProject\Debug\VectorShooterProject.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\SFML2012\SFML2\lib "sfml-audio-s-d.lib" "sfml-graphics-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\sparkon\Documents\git\VectorShooter-temp-\VectorShooterProject\Debug\VectorShooterProject.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\sparkon\Documents\git\VectorShooter-temp-\VectorShooterProject\Debug\VectorShooterProject.lib" /MACHINE:X86 Debug\Player.obj
+         Debug\Collision.obj
+         Debug\Game.obj
+         Debug\GameState.obj
+         Debug\GraphSearch.obj
+         Debug\Map.obj
+         Debug\main.obj
+         Debug\Menu.obj
+         Debug\Bullet.obj
+         Debug\Weapon.obj
+         Debug\WeaponSystem.obj
+         VectorShooterProject.vcxproj -> C:\Users\sparkon\Documents\git\VectorShooter-temp-\VectorShooterProject\Debug\VectorShooterProject.exe
+     1>Done Building Project "C:\Users\sparkon\Documents\git\VectorShooter-temp-\VectorShooterProject\VectorShooterProject\VectorShooterProject.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.64

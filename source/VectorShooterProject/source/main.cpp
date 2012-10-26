@@ -1,0 +1,16 @@
+///////////////////////////////////////////////////////
+//				 main file 
+//				PLANT ATTACK!
+//			developed by sparkon 
+//		for the "Vegetation" theme
+//////////////////////////////////////////////////////
+
+#include "game/Game.h"
+
+int main()
+{
+	Game game;
+	game.run();
+
+	return 0;
+}
