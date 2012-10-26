@@ -1,10 +1,10 @@
 Directory cloned on Spark-Laptop
 
 TODO LIST :
-Implementing Dijkstra algorithm "IMPLEMENTED" !!!
-Implementing A* algorithm
-Implementing a Caching system for the maps
-Writing code for XBOX 360 controller support
+Implementing Dijkstra algorithm "IMPLEMENTED"
+Implementing A* algorithm "IMPLEMENTED"
+Implementing a Caching system for the maps ( BOOST PROBLEM )
+Writing code for XBOX 360 controller support (gotta buy wired controller )
 Implementing path-smoothing ( raycasting ) 
 Writing the base code for the entity class
 ReWriting the player class 
