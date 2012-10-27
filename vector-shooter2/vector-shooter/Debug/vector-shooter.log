@@ -1,0 +1,28 @@
+﻿Build started 27/10/2012 13:43:21.
+     1>Project "C:\Users\sparkon\Documents\git\VectorShooter-temp-\vector-shooter - Copia\vector-shooter\vector-shooter.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\boost_1_51_0\ /IC:\SFML2012\SFML2\include /ZI /nologo /W3 /WX- /Od /Oy- /D SFML_STATIC /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Game\Game.cpp Menu\MainMenu.cpp Texture\TextureHandler.cpp
+         TextureHandler.cpp
+         Generating Code...
+         Compiling...
+         Game.cpp
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vector-shooter - copia\vector-shooter\game\game.cpp(71): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+         Compiling...
+         MainMenu.cpp
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vector-shooter - copia\vector-shooter\menu\mainmenu.cpp(46): warning C4244: 'initializing' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\sparkon\documents\git\vectorshooter-temp-\vector-shooter - copia\vector-shooter\menu\mainmenu.cpp(47): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\sparkon\Documents\git\VectorShooter-temp-\vector-shooter - Copia\Debug\vector-shooter.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\boost_1_51_0\bin.v2\libs /LIBPATH:C:\SFML2012\SFML2\lib "sfml-audio-s-d.lib" "sfml-graphics-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\sparkon\Documents\git\VectorShooter-temp-\vector-shooter - Copia\Debug\vector-shooter.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\sparkon\Documents\git\VectorShooter-temp-\vector-shooter - Copia\Debug\vector-shooter.lib" /MACHINE:X86 Debug\Game.obj
+         Debug\GameMainMenuState.obj
+         Debug\GameRunState.obj
+         Debug\main.obj
+         Debug\MainMenu.obj
+         Debug\TextureHandler.obj
+         vector-shooter.vcxproj -> C:\Users\sparkon\Documents\git\VectorShooter-temp-\vector-shooter - Copia\Debug\vector-shooter.exe
+     1>Done Building Project "C:\Users\sparkon\Documents\git\VectorShooter-temp-\vector-shooter - Copia\vector-shooter\vector-shooter.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.02
