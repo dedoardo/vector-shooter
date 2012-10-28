@@ -8,6 +8,8 @@
 #define WINDOW_INFO_H_INCLUDED
 
 #include <string>
+#include "..\Game\Game.h"
+#include "..\Controller\ControllerXBox.h"
 
 static unsigned int WINDOW_WIDTH = 1280;
 static unsigned int WINDOW_HEIGHT = 720;

@@ -21,8 +21,7 @@ Forward declarations
 =============================**/
 
 class GameState;
-
-
+class ControllerXBox;
 
 class Game
 {
@@ -30,6 +29,7 @@ public :
 	Game();
 	void Run();
 	~Game();
+	ControllerXBox*					ControllerXBox_;
 
 private :
 	GameState*						ActiveGameState_;

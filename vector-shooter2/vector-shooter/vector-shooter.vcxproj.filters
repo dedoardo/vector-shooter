@@ -16,9 +16,6 @@
     <Filter Include="Source Files\Graph">
       <UniqueIdentifier>{a0c3b4d0-e8c1-4fff-8516-8bc8923b5634}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Texture">
-      <UniqueIdentifier>{69487293-d434-4ed2-b9c2-19b92e27785a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Entity">
       <UniqueIdentifier>{0715d3d3-26c4-4846-9681-0f29f3f795e1}</UniqueIdentifier>
     </Filter>
@@ -37,6 +34,9 @@
     <Filter Include="Source Files\Utility">
       <UniqueIdentifier>{cbaf93c3-6bdf-43a7-b524-fbb7535a4204}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Controller">
+      <UniqueIdentifier>{d54729b6-58fb-4451-963d-92fb5a73726a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game\Game.cpp">
@@ -54,8 +54,11 @@
     <ClCompile Include="Menu\MainMenu.cpp">
       <Filter>Source Files\Menu</Filter>
     </ClCompile>
-    <ClCompile Include="Texture\TextureHandler.cpp">
-      <Filter>Source Files\Texture</Filter>
+    <ClCompile Include="Graph\Map.cpp">
+      <Filter>Source Files\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\ControllerXbox.cpp">
+      <Filter>Source Files\Controller</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -83,8 +86,17 @@
     <ClInclude Include="Menu\MenuObject.h">
       <Filter>Source Files\Menu</Filter>
     </ClInclude>
-    <ClInclude Include="Texture\TextureHandler.h">
-      <Filter>Source Files\Texture</Filter>
+    <ClInclude Include="Graph\Map.h">
+      <Filter>Source Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\ControllerXBox.h">
+      <Filter>Source Files\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\MapElement.h">
+      <Filter>Source Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Helper.h">
+      <Filter>Source Files\Utility</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

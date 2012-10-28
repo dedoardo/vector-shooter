@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="2" height="2" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="Wall0" tilewidth="16" tileheight="16">
+  <image source="Wall0.png" width="32" height="32"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="2" height="2">
+  <data>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+  </data>
+ </layer>
+</map>

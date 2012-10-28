@@ -22,7 +22,6 @@ class Game;
 class GameRunState : public GameState
 {
 public :
-	GameRunState();
 	void Loop();
 	void Init(sf::RenderWindow&,Game&);
 

@@ -21,10 +21,15 @@ enum
 };
 
 // textures enumerator
+
+static unsigned int TEXT_NUMBER = 4;
+
 enum
 {
 	PLAYER_TEXT,
 	ENEMY_TEXT,
+	TILE_TEXT_0,
+	TILE_WALL_0
 };
 
 #endif

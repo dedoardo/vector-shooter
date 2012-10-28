@@ -8,8 +8,11 @@
 #include "States\BaseGameState.h"
 #include "..\Utility\Enum.h"
 #include "..\Utility\WindowInfo.h"
+#include "..\Controller\ControllerXBox.h"
 #include "States\GameMainMenuState.h"
 #include "States/GameRunState.h"
+
+#include <iostream>
 
 /**=============================
 Game::Game
@@ -33,6 +36,12 @@ void Game::Run()
 
 	// Initializing all the gamestates
 	InitStates();
+
+	// Initializing the controller
+	ControllerXBox_ = new ControllerXBox(1);
+
+	if (ControllerXBox_->IsConnected())
+		std::cout << "connected !\n"; 
 
 	// Running the current state
 	while (true)
@@ -72,4 +81,5 @@ Game::~Game()
 	{
 		delete States_[i];
 	}
+	delete ControllerXBox_;
 }

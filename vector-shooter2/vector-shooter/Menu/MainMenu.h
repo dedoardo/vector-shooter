@@ -10,12 +10,14 @@
 #include "MenuObject.h"
 
 class MainMenuState;
+class ControllerXBox;
+class Game;
 
 class MainMenu
 {
 public :
 	MainMenu();
-	void			Init(sf::RenderWindow&,MainMenuState&);
+	void			Init(sf::RenderWindow&,MainMenuState&,Game&);
 	void			Update();
 
 private :
@@ -28,6 +30,11 @@ private :
 	sf::Texture						ButtonOff_;
 	sf::Texture						ButtonOn_;
 	sf::Texture						DialogBox_;
+	Game*							Game_;
+	
+
+	float							ChangeOptionTick_;
+
 };
 
 #endif

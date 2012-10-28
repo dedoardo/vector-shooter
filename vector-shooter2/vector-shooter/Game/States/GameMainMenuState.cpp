@@ -22,7 +22,7 @@ void MainMenuState::Init(sf::RenderWindow& window,Game& game)
 	Window_ = &window;
 	Game_   = &game;
 
-	MainMenu_.Init(window,*this);
+	MainMenu_.Init(window,*this,*Game_);
 }
 
 /**=============================
