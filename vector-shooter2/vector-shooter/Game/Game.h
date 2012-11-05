@@ -45,6 +45,7 @@ public :
 	// Accessors & mutators
 	inline void		setGameState(int gameStateID){ActiveGameState_ = States_[gameStateID];};
 	inline int		getGameState(){return ActiveGameStateIndex_;};
+	inline GameState*	getActiveGameState(){return ActiveGameState_;};
 
 };
 

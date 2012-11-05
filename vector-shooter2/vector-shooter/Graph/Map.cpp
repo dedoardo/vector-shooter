@@ -8,8 +8,11 @@
 #include "../rapidxml/rapidxml.hpp"
 #include "../rapidxml/rapidxml_print.hpp"
 #include "../Utility/Helper.h"
+#include "../Utility/Enum.h"
 
 #include <SFML/Graphics/Sprite.hpp>
+#include <SFML/Graphics/ConvexShape.hpp>
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -58,6 +61,8 @@ void TiledMap::LoadFromFile(std::string fileName)
 	MapHeight_ = atoi(static_cast<std::string>(rootNode->first_attribute("height")->value()).c_str());
 	CellWidth_ = atoi(static_cast<std::string>(rootNode->first_attribute("tilewidth")->value()).c_str());
 	CellHeight_ = atoi(static_cast<std::string>(rootNode->first_attribute("tileheight")->value()).c_str());
+
+	TotalSize_ = sf::Vector2f(MapWidth_ * CellWidth_,MapHeight_ * CellHeight_);
 
 	// getting texture names
 	int count = 0; 
@@ -157,7 +162,49 @@ void TiledMap::LoadFromFile(std::string fileName)
 		}
 	}
 
-	// texture will be assigned later
+	// Filling the Walls vector with all the entities for collision detection
+	std::size_t tSize = Tiles_.size();
+	// Getting texture sizes
+	float w = static_cast<float>(WallTexture_.getSize().x);
+	float h = static_cast<float>(WallTexture_.getSize().y);
+
+	for (std::size_t i = 0; i < tSize; ++i)
+	{
+		if (Tiles_[i].TileID_ >= WallsID_)
+		{
+			Entity entity(Tiles_[i].Sprite_.getPosition(),CellWidth_,CellHeight_,ENTITY_TYPE_WALL);
+			
+			// Adding points of visibility
+			int mapIndex = i;// getting index from position
+
+			if (entity.Position_.x < (MapWidth_ * CellWidth_) - CellWidth_ && TilesID_[mapIndex+1] < WallsID_ -1 ) 
+			{
+				entity.RightVisible_ = true; 
+			}else entity.RightVisible_ = false;
+
+			if (entity.Position_.x > CellWidth_ && TilesID_[mapIndex-1] < WallsID_ -1 )
+			{
+					entity.LeftVisible_ = true; 
+			}else entity.LeftVisible_ = false;
+					
+			if (entity.Position_.y < (MapHeight_ * CellHeight_ ) - CellHeight_ && TilesID_[mapIndex+MapWidth_] < WallsID_ -1)
+			{
+				entity.DownVisible_ = true;
+			}else entity.DownVisible_ = false;
+			
+						
+			if (entity.Position_.y > CellHeight_ && TilesID_[mapIndex-MapWidth_] < WallsID_ -1)
+			{
+				entity.TopVisible_ = true; 
+			}else entity.TopVisible_ = false;
+			
+
+			Walls_.push_back(entity);
+		}
+	}
+
+
+	// value to check whether the texture has been assigned to the sprite or not
 	Loaded_ = false;
 
 	
@@ -405,6 +452,15 @@ void TiledMap::Draw(sf::RenderWindow& window)
 	for (std::size_t i = 0; i < s; ++i)
 	{
 		Tiles_[i].Draw(window);
+		if (Tiles_[i].TileID_ >= WallsID_)
+		{
+				sf::ConvexShape s(4);
+				s.setPoint(0,Tiles_[i].Sprite_.getPosition());
+				s.setPoint(1,sf::Vector2f(Tiles_[i].Sprite_.getPosition().x + Tiles_[i].IntRect_.width,Tiles_[i].Sprite_.getPosition().y));
+				s.setPoint(2,sf::Vector2f(Tiles_[i].Sprite_.getPosition().x + Tiles_[i].IntRect_.width,Tiles_[i].Sprite_.getPosition().y + Tiles_[i].IntRect_.height));
+				s.setPoint(3,sf::Vector2f(Tiles_[i].Sprite_.getPosition().x ,Tiles_[i].Sprite_.getPosition().y + Tiles_[i].IntRect_.height));
+				//window.draw(s);
+		}
 	}
 }
 
@@ -418,6 +474,7 @@ void MapHandler::NewMap(std::string fileName)
 	TiledMap newMap;
 	newMap.LoadFromFile(fileName);
 	Maps_.push_back(newMap);
+	ActiveMap_ = &Maps_.back();
 }
 
 /**=============================

@@ -12,15 +12,23 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Controller\ControllerXbox.cpp" />
+    <ClCompile Include="Entity\Player.cpp" />
+    <ClCompile Include="Game\Collision.cpp" />
     <ClCompile Include="Game\Game.cpp" />
     <ClCompile Include="Game\States\GameMainMenuState.cpp" />
     <ClCompile Include="Game\States\GameRunState.cpp" />
     <ClCompile Include="Graph\Map.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menu\MainMenu.cpp" />
+    <ClCompile Include="UI\UI.cpp" />
+    <ClCompile Include="Weapon\Weapon.cpp" />
+    <ClCompile Include="Weapon\WeaponSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Controller\ControllerXBox.h" />
+    <ClInclude Include="Entity\Entity.h" />
+    <ClInclude Include="Entity\Player.h" />
+    <ClInclude Include="Game\Collision.h" />
     <ClInclude Include="Game\Game.h" />
     <ClInclude Include="Game\States\BaseGameState.h" />
     <ClInclude Include="Game\States\GameMainMenuState.h" />
@@ -29,9 +37,14 @@
     <ClInclude Include="Graph\MapElement.h" />
     <ClInclude Include="Menu\MainMenu.h" />
     <ClInclude Include="Menu\MenuObject.h" />
+    <ClInclude Include="UI\UI.h" />
+    <ClInclude Include="UI\UIElement.h" />
     <ClInclude Include="Utility\Enum.h" />
     <ClInclude Include="Utility\Helper.h" />
     <ClInclude Include="Utility\WindowInfo.h" />
+    <ClInclude Include="Weapon\Bullet.h" />
+    <ClInclude Include="Weapon\Weapon.h" />
+    <ClInclude Include="Weapon\WeaponSystem.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{FB2EAE20-1ACE-4638-B48C-17677B1441F8}</ProjectGuid>

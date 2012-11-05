@@ -1,0 +1,8 @@
+Turret.wav OpenGameArt user Gobusto CC-BY-SA 3.0
+Silencer.wav OpenGameArt user bart Public-domain
+Metroid-Door soundbible.com user Brandino480 Attribution 3.0
+LaserCannon.wav soundbible.com user Mike Koenig attribution 3.0
+EndFx.wav soundbible.com user Mike Koenig attribution 3.0
+Gun_Shot.wav soundbible.com user Marvin attribution 3.0
+50_Sniper_Shot.wav soundbible.com user Liam Attribution 3.0
+Gun_Cocking_Fast soundbible.com user Mike Koenig Attribution 3.0

@@ -15,6 +15,7 @@
 #include <SFML/Graphics/Sprite.hpp>
 #include <SFML/Graphics/Rect.hpp>
 #include "MapElement.h"
+#include "../Entity/Entity.h"
 
 class Tile
 {
@@ -34,7 +35,11 @@ public :
 	void					LoadFromFile(std::string);
 	void					Draw(sf::RenderWindow&);
 
+	inline sf::Vector2f		GetSize()const{return TotalSize_;};
+	std::vector<Entity>*	GetWalls(){return &Walls_;};
+
 private :
+	sf::Vector2f				TotalSize_;
 	bool						Loaded_;
 	std::string					MapName_;
 	int							CellWidth_;
@@ -55,6 +60,7 @@ private :
 
 	std::vector<MapEdge>		Edges_;
 	std::vector<MapNode>		Nodes_;
+	std::vector<Entity>			Walls_;
 
 };
 
@@ -72,6 +78,7 @@ public :
 	void						Init(sf::RenderWindow&);
 	void						NewMap(std::string);
 	void						Update();
+	inline TiledMap*			GetActiveMap(){return ActiveMap_;};
 
 private :
 	std::vector<TiledMap>		Maps_;

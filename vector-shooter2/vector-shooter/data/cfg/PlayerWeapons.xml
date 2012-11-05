@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weaponcfg>
+	<weapons number ="1" >
+		<weapon id="0" name="HandGun" >
+			<crossair source="data//assets//crossair//weapon_01_cross_air.png" />
+			<stats range="50" spread="30" ratio="0.2" damage="80" ammo="20" loaders="5" reload="1" nofloaders="3" power="20000"/>
+			<bullet speed="200" bulletspershot="1" source="data//assets//bullet//Bullet_0.png" sound="data//sounds//effects//LaserCannon.ogg" />
+		</weapon>	
+		<weapon id="1" name="Shotgun" >
+			<crossair source="data//assets//crossair//weapon_02_cross_air.png" />
+			<stats range="50" spread="30" ratio="1" damage="80" ammo="20" loaders="2" reload="0.5" nofloaders="3" power="20000"/>
+			<bullet speed="200" bulletspershot="10" source="data//assets//bullet//Bullet_0.png" sound="data//sounds//effects//LaserCannon.ogg" />
+		</weapon>
+		<weapon id="2" name="Rifle" >
+			<crossair source="data//assets//crossair//weapon_03_cross_air.png" />
+			<stats range="100" spread="30" ratio="2" damage="80" ammo="20" loaders="2" reload="0.5" nofloaders="3" power="20000"/>
+			<bullet speed="200" bulletspershot="10" source="data//assets//bullet//Bullet_0.png" sound="data//sounds//effects//LaserCannon.ogg" />
+		</weapon>
+		<weapon id="3" name="Assault Rifle" >
+			<crossair source="data//assets//crossair//weapon_04_cross_air.png" />
+			<stats range="20" spread="30" ratio="2" damage="80" ammo="20" loaders="2" reload="0.5" nofloaders="3" power="20000"/>
+			<bullet speed="200" bulletspershot="10" source="data//assets//bullet//Bullet_0.png" sound="data//sounds//effects//LaserCannon.ogg" />
+		</weapon>
+		<weapon id="4" name="Precision Weapon" >
+			<crossair source="data//assets//crossair//weapon_05_cross_air.png" />
+			<stats range="50" spread="30" ratio="2" damage="80" ammo="20" loaders="2" reload="0.5" nofloaders="3" power="20000"/>
+			<bullet speed="200" bulletspershot="10" source="data//assets//bullet//Bullet_0.png" sound="data//sounds//effects//LaserCannon.ogg" />
+		</weapon>
+		<weapon id="5" name="Ray Gun" >
+			<crossair source="data//assets//crossair//weapon_06_cross_air.png" />
+			<stats range="50" spread="30" ratio="2" damage="80" ammo="20" loaders="2" reload="0.5" nofloaders="3" power="20000"/>
+			<bullet speed="200" bulletspershot="10" source="data//assets//bullet//Bullet_0.png" sound="data//sounds//effects//LaserCannon.ogg" />
+		</weapon>
+		<weapon id="6" name="Rocket Launcher" >
+			<crossair source="data//assets//crossair//weapon_07_cross_air.png" />
+			<stats range="50" spread="30" ratio="2" damage="80" ammo="20" loaders="2" reload="0.5" nofloaders="3" power="20000"/>
+			<bullet speed="200" bulletspershot="10" source="data//assets//bullet//Bullet_0.png" sound="data//sounds//effects//LaserCannon.ogg" />
+		</weapon>
+		<weapon id="7" name="Weapon-X" >
+			<crossair source="data//assets//crossair//weapon_08_cross_air.png" />
+			<stats range="50" spread="30" ratio="2" damage="80" ammo="20" loaders="2" reload="0.5" nofloaders="3" power="20000"/>
+			<bullet speed="200" bulletspershot="10" source="data//assets//bullet//Bullet_0.png" sound="data//sounds//effects//LaserCannon.ogg" />
+		</weapon>
+	</weapons>
+
+</weaponcfg>

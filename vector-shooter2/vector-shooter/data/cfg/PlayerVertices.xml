@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vertices>
+	<texture>
+		<v>
+			<vertex x="4" y="2.5" />
+		</v>
+		<fire>
+			<vertex x="8" y="2.5" />
+		</fire>
+		
+	</texture>
+</vertices>

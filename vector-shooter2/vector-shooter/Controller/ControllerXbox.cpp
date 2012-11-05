@@ -9,8 +9,9 @@
 /**=============================
 ControllerXBox::ControllerXBox
 =============================**/
-ControllerXBox::ControllerXBox()
+ControllerXBox::~ControllerXBox()
 {
+	StopAllVibrations();
 }
 
 /**=============================
@@ -19,6 +20,9 @@ ControllerXBox::ControllerXBox
 ControllerXBox::ControllerXBox(int playerNumber)
 {
 	ControllerNum_ = playerNumber - 1;
+	MAX_THUMB_VALUE = 32768;
+	MIN_THUMB_VALUE = -32768;
+	MAX_VIBRATION_VALUE = 65535;
 }
 
 /**=============================

@@ -4,6 +4,7 @@
 #define HELPER_H_INCLUDED
 // Helper functions
 #include "../Graph/MapElement.h"
+#include <SFML/System/Vector2.hpp>
 
 /**
 ==========================
@@ -40,5 +41,4 @@ bool EdgeExists(int from,int to,std::vector<MapEdge>& edges,std::size_t edgeSize
 	}
 	return false;
 }
-
 #endif

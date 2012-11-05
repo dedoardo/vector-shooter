@@ -10,6 +10,7 @@ Includes
 
 #include <SFML/Graphics/RenderWindow.hpp>
 #include "BaseGameState.h"
+#include "../Collision.h"
 
 /**=============================
 Forward declarations
@@ -24,6 +25,8 @@ class GameRunState : public GameState
 public :
 	void Loop();
 	void Init(sf::RenderWindow&,Game&);
+
+	CollisionHandler	CollisionHandler_;
 
 private :
 	void			HandleEvents();

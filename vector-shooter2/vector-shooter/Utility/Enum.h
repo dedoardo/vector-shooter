@@ -32,4 +32,48 @@ enum
 	TILE_WALL_0
 };
 
+// entity type enumerator
+
+enum 
+{
+	ENTITY_TYPE_PLAYER,
+	ENTITY_TYPE_ENEMY,
+	ENTITY_TYPE_BULLET,
+	ENTITY_TYPE_WALL
+};
+
+// different kinds of player-to-wall collision
+enum
+{
+	COLLISION_LEFT,
+	COLLISION_RIGHT,
+	COLLISION_TOP,
+	COLLISION_DOWN,
+	COLLISION_FALSE,
+	COLLISION_TRUE
+};
+
+
+// weapons systems
+
+enum
+{
+	WEAPON_SYSTEM_PLAYER_DEFAULT,
+	WEAPON_SYSTEM_ENEMY_DEFAULT
+};
+
+// different weapons
+
+enum
+{
+	WEAPON_1,
+	WEAPON_2,
+	WEAPON_3,
+	WEAPON_4,
+	WEAPON_5,
+	WEAPON_6,
+	WEAPON_7,
+	WEAPON_8
+};
+
 #endif

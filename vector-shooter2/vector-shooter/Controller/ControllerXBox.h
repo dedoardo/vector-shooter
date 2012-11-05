@@ -14,7 +14,12 @@ class ControllerXBox
 {
 public :
 	ControllerXBox();
+	~ControllerXBox();
 	ControllerXBox(int);
+
+	short	MAX_THUMB_VALUE;
+	short	MIN_THUMB_VALUE;
+	unsigned int	MAX_VIBRATION_VALUE;
 
 	XINPUT_STATE GetState();
 	bool		 IsConnected();
@@ -26,6 +31,9 @@ public :
 private :
 	XINPUT_STATE ControllerState_;
 	int			 ControllerNum_;
+
+
 };
+
 
 #endif // xbox 360 controller

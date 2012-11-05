@@ -13,6 +13,8 @@
 #include "States/GameRunState.h"
 
 #include <iostream>
+#include <random>
+#include <ctime>
 
 /**=============================
 Game::Game
@@ -29,6 +31,9 @@ void Game::Run()
 	// Initializing the window
 	sf::VideoMode videoMode(WINDOW_WIDTH,WINDOW_HEIGHT,32);
 	sf::RenderWindow window(videoMode,WINDOW_CAPTION);
+
+	// Seeding the random number generator
+	srand(time(NULL));
 
 	Window_ = &window;
 	VideoMode_ = &videoMode;
