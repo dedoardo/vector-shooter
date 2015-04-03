@@ -1,0 +1,10 @@
+<bonuses number_per_map="10">
+	<bonus id="bonus_1" respawn_time="5" />
+	<bonus id="bonus_2" respawn_time="5" />
+	<bonus id="bonus_3" respawn_time="5" />
+	<bonus id="bonus_4" respawn_time="5" />
+	<bonus id="bonus_5" respawn_time="5" />
+	<bonus id="bonus_6" respawn_time="5" />
+	<bonus id="bonus_7" respawn_time="5" />
+	<bonus id="bonus_8" respawn_time="5" />
+</bonuses>

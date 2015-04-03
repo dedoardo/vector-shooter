@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infonode>
+	<enemyinfo>
+		<!-- Difficulty is numberated for better access from C++
+		0 -> easy
+		1 -> normal
+		2 -> hard
+		-->
+		<0>
+			<!-- They are sorted by difficulty 
+			number -> indicates the max number of enemies
+			respawn -> indicates respawn time after each enemy is killed
+			-->
+			<enemy number="8"/>
+			<!-- Information regarding enemy player stats -->
+			<stats speed="50" aggressivity="0" respawn="5"/>
+		</0>
+		<1>
+			<!-- They are sorted by difficulty 
+			number -> indicates the max number of enemies
+			respawn -> indicates respawn time after each enemy is killed
+			-->
+			<enemy number="8"/>
+			<!-- Information regarding enemy player stats -->
+			<stats speed="75" aggressivity="1" respawn="2.5"/>
+		
+		</1>
+		<2>
+			<!-- They are sorted by difficulty 
+			number -> indicates the max number of enemies
+			respawn -> indicates respawn time after each enemy is killed
+			-->
+			<enemy number="8"/>
+			<!-- Information regarding enemy player stats -->
+			<stats speed="100" aggressivity="2"  respawn="1"/>
+	
+		</2>
+	</enemyinfo>
+</infonode>

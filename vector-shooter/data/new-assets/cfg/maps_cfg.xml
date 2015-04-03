@@ -1,0 +1,5 @@
+<maps>
+	<map name="Close Quarter" thumbnail="close_quarter_thumbnail" data="data/new-assets/maps/close_quarter" />
+	<map name="Domination" thumbnail="domination_thumbnail" data="data/new-assets/maps/domination" />
+	<map name="Open Combat" thumbnail="open_combat_thumbnail" data="data/new-assets/maps/open_combat" />
+</maps>

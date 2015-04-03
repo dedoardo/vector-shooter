@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Bonus\Bonus.cpp" />
+    <ClCompile Include="Bonus\BonusHandler.cpp" />
+    <ClCompile Include="Controller\ControllerXbox.cpp" />
+    <ClCompile Include="Entity\Enemy.cpp" />
+    <ClCompile Include="Entity\EnemyFactory.cpp" />
+    <ClCompile Include="Entity\Goal\Goal_Attack.cpp" />
+    <ClCompile Include="Entity\Goal\Goal_Explore.cpp" />
+    <ClCompile Include="Entity\Goal\Goal_FindPath.cpp" />
+    <ClCompile Include="Entity\Goal\Goal_FollowTarget.cpp" />
+    <ClCompile Include="Entity\Goal\Goal_GetExplorePosition.cpp" />
+    <ClCompile Include="Entity\Goal\Goal_Seek.cpp" />
+    <ClCompile Include="Entity\Goal\Goal_SeekTarget.cpp" />
+    <ClCompile Include="Entity\Goal\Goal_Think.cpp" />
+    <ClCompile Include="Entity\Player.cpp" />
+    <ClCompile Include="Game\AssetManager.cpp" />
+    <ClCompile Include="Game\Collision.cpp" />
+    <ClCompile Include="Game\EffectHandler.cpp" />
+    <ClCompile Include="Game\Game.cpp" />
+    <ClCompile Include="Game\GameController.cpp" />
+    <ClCompile Include="Game\States\GameCreditState.cpp" />
+    <ClCompile Include="Game\States\GameHighscoreState.cpp" />
+    <ClCompile Include="Game\States\GameMainMenuState.cpp" />
+    <ClCompile Include="Game\States\GameRunState.cpp" />
+    <ClCompile Include="Globals.h" />
+    <ClCompile Include="Graph\Map.cpp" />
+    <ClCompile Include="Graph\PathFinder.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Menu\MainMenu.cpp" />
+    <ClCompile Include="UI\UI.cpp" />
+    <ClCompile Include="Weapon\Weapon.cpp" />
+    <ClCompile Include="Weapon\WeaponSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Bonus\Bonus.h" />
+    <ClInclude Include="Bonus\BonusHandler.h" />
+    <ClInclude Include="Controller\ControllerXBox.h" />
+    <ClInclude Include="Entity\Enemy.h" />
+    <ClInclude Include="Entity\EnemyFactory.h" />
+    <ClInclude Include="Entity\Entity.h" />
+    <ClInclude Include="Entity\Goal\Goal.h" />
+    <ClInclude Include="Entity\Goal\Goal_Attack.h" />
+    <ClInclude Include="Entity\Goal\Goal_Explore.h" />
+    <ClInclude Include="Entity\Goal\Goal_FindPath.h" />
+    <ClInclude Include="Entity\Goal\Goal_FollowTarget.h" />
+    <ClInclude Include="Entity\Goal\Goal_GetExplorePosition.h" />
+    <ClInclude Include="Entity\Goal\Goal_Seek.h" />
+    <ClInclude Include="Entity\Goal\Goal_SeekTarget.h" />
+    <ClInclude Include="Entity\Goal\Goal_Think.h" />
+    <ClInclude Include="Entity\Player.h" />
+    <ClInclude Include="Game\AssetManager.h" />
+    <ClInclude Include="Game\Collision.h" />
+    <ClInclude Include="Game\EffectHandler.h" />
+    <ClInclude Include="Game\Game.h" />
+    <ClInclude Include="Game\GameController.h" />
+    <ClInclude Include="Game\States\BaseGameState.h" />
+    <ClInclude Include="Game\States\GameCreditState.h" />
+    <ClInclude Include="Game\States\GameHighscoreState.h" />
+    <ClInclude Include="Game\States\GameMainMenuState.h" />
+    <ClInclude Include="Game\States\GameRunState.h" />
+    <ClInclude Include="Graph\Map.h" />
+    <ClInclude Include="Graph\MapElement.h" />
+    <ClInclude Include="Graph\PathFinder.h" />
+    <ClInclude Include="Menu\MainMenu.h" />
+    <ClInclude Include="Menu\MenuObject.h" />
+    <ClInclude Include="UI\UI.h" />
+    <ClInclude Include="UI\UIElement.h" />
+    <ClInclude Include="Utility\Enum.h" />
+    <ClInclude Include="Utility\Helper.h" />
+    <ClInclude Include="Utility\WindowInfo.h" />
+    <ClInclude Include="Weapon\Bullet.h" />
+    <ClInclude Include="Weapon\Weapon.h" />
+    <ClInclude Include="Weapon\WeaponSystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="asset_info.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FB2EAE20-1ACE-4638-B48C-17677B1441F8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>vectorshooter</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Lua\5.1\include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;C:\SFML2012\SFML2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Lua\5.1\lib;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib;C:\SFML2012\SFML2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>XInput9_1_0.lib;sfml-audio-s-d.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Lua\5.1\include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;C:\SFML2012\SFML2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Lua\5.1\lib;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib;C:\boost_1_51_0\bin.v2\libs;C:\SFML2012\SFML2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>XInput9_1_0.lib;sfml-audio-s.lib;sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

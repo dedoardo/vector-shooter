@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Graph">
+      <UniqueIdentifier>{a0c3b4d0-e8c1-4fff-8516-8bc8923b5634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity">
+      <UniqueIdentifier>{0715d3d3-26c4-4846-9681-0f29f3f795e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Weapon">
+      <UniqueIdentifier>{55457478-fe60-4714-a11f-a1266ae00ee1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Menu">
+      <UniqueIdentifier>{b419cc4c-c8a9-44b1-b752-d8ff9615590c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{a114fceb-0f4c-4dd1-b112-a955a2c75a04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utility">
+      <UniqueIdentifier>{cbaf93c3-6bdf-43a7-b524-fbb7535a4204}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controller">
+      <UniqueIdentifier>{d54729b6-58fb-4451-963d-92fb5a73726a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{a764e3e3-37db-45d0-be5e-7a7d44832cb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity\Goal">
+      <UniqueIdentifier>{a852abee-9280-4ce4-9812-7603969f2f15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity\Steering">
+      <UniqueIdentifier>{8e1279d3-9af9-409a-9b84-6cf19727548e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bonus">
+      <UniqueIdentifier>{f88d338e-5417-4aee-aa86-ea5791d1eb32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\states">
+      <UniqueIdentifier>{71b000be-e716-43bb-bfea-4b422692b646}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game\Game.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\States\GameMainMenuState.cpp">
+      <Filter>Source Files\Game\states</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\States\GameRunState.cpp">
+      <Filter>Source Files\Game\states</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\MainMenu.cpp">
+      <Filter>Source Files\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph\Map.cpp">
+      <Filter>Source Files\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\ControllerXbox.cpp">
+      <Filter>Source Files\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Player.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Collision.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UI.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon\Weapon.cpp">
+      <Filter>Source Files\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Enemy.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\EnemyFactory.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Goal\Goal_Think.cpp">
+      <Filter>Source Files\Entity\Goal</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Goal\Goal_Explore.cpp">
+      <Filter>Source Files\Entity\Goal</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Goal\Goal_FindPath.cpp">
+      <Filter>Source Files\Entity\Goal</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Goal\Goal_Seek.cpp">
+      <Filter>Source Files\Entity\Goal</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph\PathFinder.cpp">
+      <Filter>Source Files\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Goal\Goal_GetExplorePosition.cpp">
+      <Filter>Source Files\Entity\Goal</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Goal\Goal_Attack.cpp">
+      <Filter>Source Files\Entity\Goal</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Goal\Goal_SeekTarget.cpp">
+      <Filter>Source Files\Entity\Goal</Filter>
+    </ClCompile>
+    <ClCompile Include="Bonus\Bonus.cpp">
+      <Filter>Source Files\Bonus</Filter>
+    </ClCompile>
+    <ClCompile Include="Bonus\BonusHandler.cpp">
+      <Filter>Source Files\Bonus</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Goal\Goal_FollowTarget.cpp">
+      <Filter>Source Files\Entity\Goal</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameController.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon\WeaponSystem.cpp">
+      <Filter>Source Files\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\EffectHandler.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\States\GameCreditState.cpp">
+      <Filter>Source Files\Game\states</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\States\GameHighscoreState.cpp">
+      <Filter>Source Files\Game\states</Filter>
+    </ClCompile>
+    <ClCompile Include="Globals.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\AssetManager.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game\Game.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\States\BaseGameState.h">
+      <Filter>Source Files\Game\states</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Enum.h">
+      <Filter>Source Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\WindowInfo.h">
+      <Filter>Source Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\States\GameMainMenuState.h">
+      <Filter>Source Files\Game\states</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\States\GameRunState.h">
+      <Filter>Source Files\Game\states</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\MenuObject.h">
+      <Filter>Source Files\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\Map.h">
+      <Filter>Source Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\ControllerXBox.h">
+      <Filter>Source Files\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\MapElement.h">
+      <Filter>Source Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Helper.h">
+      <Filter>Source Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Entity.h">
+      <Filter>Source Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Player.h">
+      <Filter>Source Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Collision.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon\Weapon.h">
+      <Filter>Source Files\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UI.h">
+      <Filter>Source Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIElement.h">
+      <Filter>Source Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon\Bullet.h">
+      <Filter>Source Files\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Enemy.h">
+      <Filter>Source Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\EnemyFactory.h">
+      <Filter>Source Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Goal\Goal.h">
+      <Filter>Source Files\Entity\Goal</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Goal\Goal_Think.h">
+      <Filter>Source Files\Entity\Goal</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Goal\Goal_Explore.h">
+      <Filter>Source Files\Entity\Goal</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Goal\Goal_FindPath.h">
+      <Filter>Source Files\Entity\Goal</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Goal\Goal_Seek.h">
+      <Filter>Source Files\Entity\Goal</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\PathFinder.h">
+      <Filter>Source Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Goal\Goal_GetExplorePosition.h">
+      <Filter>Source Files\Entity\Goal</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Goal\Goal_Attack.h">
+      <Filter>Source Files\Entity\Goal</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Goal\Goal_SeekTarget.h">
+      <Filter>Source Files\Entity\Goal</Filter>
+    </ClInclude>
+    <ClInclude Include="Bonus\Bonus.h">
+      <Filter>Source Files\Bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="Bonus\BonusHandler.h">
+      <Filter>Source Files\Bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Goal\Goal_FollowTarget.h">
+      <Filter>Source Files\Entity\Goal</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\MainMenu.h">
+      <Filter>Source Files\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameController.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon\WeaponSystem.h">
+      <Filter>Source Files\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\EffectHandler.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\States\GameHighscoreState.h">
+      <Filter>Source Files\Game\states</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\States\GameCreditState.h">
+      <Filter>Source Files\Game\states</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\AssetManager.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="asset_info.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

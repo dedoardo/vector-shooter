@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weaponcfg>
+	<weapons number ="1" >
+		<weapon id="0" name="HandGun" effect="1">
+			<crossair source="NONE" />
+			<stats range="50" spread="0" ratio="0.1" damage="10" ammo="2000" loaders="5" reload="1" nofloaders="3" power="20000"/>
+			<bullet speed="200" bulletspershot="1" source="bullet_0" sound="data//sounds//effects//LaserCannon.ogg" radius="1" />
+		</weapon>
+	</weapons>
+
+</weaponcfg>

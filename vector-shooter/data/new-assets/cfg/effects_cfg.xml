@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<effect_cfg>
+	<effect texture="explosion_red_small" width="16" height="16" frame="0.001" loop="0"/>
+	<effect texture="explosion_red_big" width="64" height="48" frame="0.001" loop="0"/>
+	<effect texture="explosion_blue_small" width="16" height="16" frame="0.001" loop="0"/>
+	<effect texture="explosion_blue_big" width="32" height="32" frame="0.001" loop="0"/>
+	<effect texture="explosion_rocket" width="64" height="64" frame="0.01" loop="0" />
+	
+</effect_cfg>

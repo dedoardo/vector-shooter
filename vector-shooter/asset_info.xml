@@ -1,0 +1,61 @@
+<assets>
+  <asset type="texture" id="button_on" src="data/new-assets/textures/button_on.png" />
+  <asset type="texture" id="button_off" src="data/new-assets/textures/button_off.png" />
+  
+  <asset type="texture" id="main_menu_bg" src="data/new-assets/textures/backgrounds/main_menu_bg.png" />
+  <asset type="texture" id="over_thumbnail" src="data/new-assets/textures/over_thumbnail.png" />
+  <asset type="texture" id="map_choose_bg" src="data/new-assets/textures/backgrounds/map_choose_bg.png" />
+  <asset type="texture" id="highscore_bg" src="data/new-assets/textures/backgrounds/highscore_bg.png" />
+  <asset type="texture" id="end_game_bg" src="data/new-assets/textures/backgrounds/end_game_bg.png" />
+  <asset type="texture" id="game_mode_bg" src="data/new-assets/textures/backgrounds/game_mode_bg.png" />
+  <asset type="texture" id="grid" src="data/new-assets/textures/grid.png" />
+
+  <asset type="texture" id="player" src="data/new-assets/textures/player.png" />
+  <asset type="texture" id="enemy" src="data/new-assets/textures/enemy.png" />
+  <asset type="texture" id="light_mask" src="data/new-assets/textures/light_mask.png" />
+  <asset type="texture" id="weapon_icons" src="data/new-assets/textures/weapon_icons.png" />
+  
+  <asset type="texture" id="explosion_red_small" src="data/new-assets/textures/effects/explosion_red_small.png" />
+  <asset type="texture" id="explosion_red_big" src="data/new-assets/textures/effects/explosion_red_big.png" />
+  <asset type="texture" id="explosion_blue_small" src="data/new-assets/textures/effects/explosion_blue_small.png" />
+  <asset type="texture" id="explosion_blue_big" src="data/new-assets/textures/effects/explosion_blue_big.png" />
+  <asset type="texture" id="explosion_rocket" src="data/new-assets/textures/effects/explosion_rocket.png" />
+
+  <asset type="texture" id="close_quarter_thumbnail" src="data/new-assets/textures/close_quarter_thumbnail.png" />
+  <asset type="texture" id="domination_thumbnail" src="data/new-assets/textures/domination_thumbnail.png" />
+  <asset type="texture" id="open_combat_thumbnail" src="data/new-assets/textures/open_combat_thumbnail.png" />
+  
+  <asset type="texture" id="bonus_1" src="data/new-assets/textures/icons/bonus_1.png" />
+  <asset type="texture" id="bonus_2" src="data/new-assets/textures/icons/bonus_2.png" />
+  <asset type="texture" id="bonus_3" src="data/new-assets/textures/icons/bonus_3.png" />
+  <asset type="texture" id="bonus_4" src="data/new-assets/textures/icons/bonus_4.png" />
+  <asset type="texture" id="bonus_5" src="data/new-assets/textures/icons/bonus_5.png" />
+  <asset type="texture" id="bonus_6" src="data/new-assets/textures/icons/bonus_6.png" />
+  <asset type="texture" id="bonus_7" src="data/new-assets/textures/icons/bonus_7.png" />
+  <asset type="texture" id="bonus_8" src="data/new-assets/textures/icons/bonus_8.png" />
+  
+  <asset type="texture" id="bullet_0" src="data/new-assets/textures/bullets/bullet_0.png" />
+  <asset type="texture" id="bullet_1" src="data/new-assets/textures/bullets/bullet_1.png" />
+  <asset type="texture" id="bullet_2" src="data/new-assets/textures/bullets/bullet_2.png" />
+  <asset type="texture" id="bullet_3" src="data/new-assets/textures/bullets/bullet_3.png" />
+  <asset type="texture" id="bullet_4" src="data/new-assets/textures/bullets/bullet_4.png" />
+  <asset type="texture" id="bullet_5" src="data/new-assets/textures/bullets/bullet_5.png" />
+  <asset type="texture" id="bullet_6" src="data/new-assets/textures/bullets/bullet_6.png" />
+  <asset type="texture" id="bullet_7" src="data/new-assets/textures/bullets/bullet_7.png" />
+
+  <asset type="texture" id="crossair_1" src="data/new-assets/textures/crossairs/crossair_1.png" />
+  <asset type="texture" id="crossair_2" src="data/new-assets/textures/crossairs/crossair_2.png" />
+  <asset type="texture" id="crossair_3" src="data/new-assets/textures/crossairs/crossair_3.png" />
+  <asset type="texture" id="crossair_4" src="data/new-assets/textures/crossairs/crossair_4.png" />
+  <asset type="texture" id="crossair_5" src="data/new-assets/textures/crossairs/crossair_5.png" />
+  <asset type="texture" id="crossair_6" src="data/new-assets/textures/crossairs/crossair_6.png" />
+  
+  <asset type="texture" id="right_button_on" src="data/new-assets/textures/UI/right_button_on.png" />
+  <asset type="texture" id="right_button_off" src="data/new-assets/textures/UI/right_button_off.png" />
+  <asset type="texture" id="left_button_on" src="data/new-assets/textures/UI/left_button_on.png" />
+  <asset type="texture" id="left_button_off" src="data/new-assets/textures/UI/left_button_off.png" />
+
+  <asset type="font" id="capture" src="data/new-assets/fonts/capture.ttf" />
+  <asset type="font" id="sub" src="data/new-assets/fonts/sub.ttf" />
+  <asset type="font" id="ehsmb" src="data/new-assets/fonts/ehsmb.ttf" />
+</assets>

@@ -1,9 +1,0 @@
-.sprite { background-image: url('output.png'); background-color: transparent; background-repeat: no-repeat; }
-.weapon_0 { width: 16px; height: 16px; background-position: 0px -112px; }
-.weapon_1 { width: 16px; height: 16px; background-position: 0px -96px; }
-.weapon_2 { width: 16px; height: 16px; background-position: 0px -80px; }
-.weapon_3 { width: 16px; height: 16px; background-position: 0px -64px; }
-.weapon_4 { width: 16px; height: 16px; background-position: 0px -48px; }
-.weapon_5 { width: 16px; height: 16px; background-position: 0px -32px; }
-.weapon_6 { width: 16px; height: 16px; background-position: 0px -16px; }
-.weapon_7 { width: 16px; height: 16px; background-position: 0px 0px; }
